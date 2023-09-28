@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
     font-family:sans-serif 'Times New Roman', Times, serif;
@@ -57,6 +57,96 @@ button{
     border-radius: 20px;
     border: 0px;
     outline: none;
-    cursor: pointer;
+    cursor:  pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
 
+}
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+
+}
+.lamp{
+    width: 100%;
+    
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-43%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+    
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 15px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+
+}
+.control .line{
+    width: 250px;
+    height: 3px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+.control .line span{
+    width: 50%;
+    height: 7px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+
+}
+.active{
+    background: green;
+
+}
+.active span{
+    background: #fff;
+    margin-left: 37px;
+}
+.on{
+    opacity: 1;
 }

@@ -13,16 +13,44 @@
             <img src="logo.png" class="logo">
         <ul>
             
-            <li><a href="">latest</a></li>
+            <li><a href="">Latest</a></li>
             <li><a href="">Modern</a></li>
             <li><a href="">Contemporary</a></li>
             <li><a href="">Affordable</a></li>
         </ul>
         <!--  -->
-        <button type="button">click here</button>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
         <!-- nav must be in horizontal  and u must  specfic each tag in nav and div if you want it to be styled different -->
     
     </nav>
+
+    <div class="lamp-container">
+        <img src="lamp.png" alt="lamp" class="lammp">
+        <img src="light.png" alt="light" class="light" id="light01">
     </div>
+   
+    <div class="text-container">
+        <h1>Latest <br> in Lighting </h1>
+        <P>This is the first lamp from our company.we're making a huge
+         collection of modern Lamps in all categories from home use to office use</P>
+         <a href="">Check All Collections</a>
+         <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>    
+    
+    
+    </div>
+<script>
+    var btn = document.getElementById("btn");
+    var light01 = document.getElementById("light01");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light01.classList.toggle("on")
+    }
+</script>
 </body>
 </html>
